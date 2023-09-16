@@ -1,0 +1,26 @@
+.detail {
+  width: 100%;
+  min-height: 80vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0; 
+}
+
+.detail table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.detail td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.detail tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

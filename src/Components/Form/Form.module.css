@@ -1,0 +1,41 @@
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo para los campos de entrada */
+.form-container input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilo para el botón de envío */
+.form-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para los mensajes de error y éxito */
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: rgb(21, 207, 21);
+  font-size: 20px;
+}
+

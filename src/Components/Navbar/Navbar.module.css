@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  min-width: 80vw;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  gap: 40px; 
+}
+
+.themeLightButton {
+  padding: 7px 14px; 
+  border: none;
+  background-color: #fff; 
+  font-size: 20px;
+  cursor: pointer;
+  color: #000; 
+  border-radius: 10px;
+}
+
+.themeBlackButton {
+  padding: 7px 14px; 
+  border: none;
+  background-color: #333; 
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff; 
+  border-radius: 10px;
+}

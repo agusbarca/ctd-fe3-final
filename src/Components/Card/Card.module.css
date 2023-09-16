@@ -1,0 +1,55 @@
+.card {
+  border: 1px solid #c2c2c2;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  max-width: 220px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover{
+  border: 0.5px solid rgb(189, 219, 19);
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card h4 {
+  font-size: 1rem;
+}
+
+.favButton {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.favButton:hover {
+  background-color: #f57c00;
+}
+

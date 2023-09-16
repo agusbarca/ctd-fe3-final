@@ -1,0 +1,23 @@
+footer{
+  min-width: 80vw;
+  display: flex;
+  text-align: center;
+  padding: 10px 70px;
+  height: 40px;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.iconos{
+  justify-content: flex-end;
+  gap: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+footer p{
+  margin: 0;
+  padding-top: 0.7rem;
+}
+
+
