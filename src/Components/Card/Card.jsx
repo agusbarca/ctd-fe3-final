@@ -6,13 +6,19 @@ import styles from './Card.module.css'
 
 const Card = ({ odontologo}) => {
 
-  const {dispatch} = useGlobalStates()
-  const addFav = ()=>{
-    dispatch({type: 'ADD_FAV', payload: odontologo})
+  const {dispatch, state} = useGlobalStates()
+
+  const addFav = () => {
+    if (!state.favs.some((fav) => fav.id === odontologo.id)) {
+      dispatch({ type: 'ADD_FAV', payload: odontologo });
+    } else {
+      alert('Este dentista ya está en tus Favoritos y no se puede agregar más de una vez');
+    }
   }
 
   const removeFav = () => {
-    dispatch({ type: 'REMOVE_FAVS', payload: odontologo });
+    const updatedFavs = state.favs.filter((fav) => fav.id !== odontologo.id);
+    dispatch({ type: 'REMOVE_FAV', payload: updatedFavs });
   }
 
   const isInFavPage = window.location.pathname.includes("/favs");

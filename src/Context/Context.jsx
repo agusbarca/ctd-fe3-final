@@ -8,14 +8,9 @@ const reducer = (state, action) => {
     case 'GET_ODONTOLOGOS':
       return { ...state, odontologos: action.payload}
     case 'ADD_FAV':
-      if (!state.favs.some((fav) => fav.id === action.payload.id)){
-        return { ...state, favs: [...state.favs, action.payload]}
-      }
-      alert('Este dentista ya está en tus Favoritos y no se puede agregar más de una vez') 
-      return state;
-    case 'REMOVE_FAVS':
-      const updatedFavs = state.favs.filter((fav) => fav.id !== action.payload.id);
-      return { ...state, favs: updatedFavs };
+      return { ...state, favs: [...state.favs, action.payload] };
+    case 'REMOVE_FAV':
+      return { ...state, favs: action.payload };
     case 'SWITCH_THEME':
       return { ...state, theme: state.theme === "light" ? "dark" : "light" }
     default:
